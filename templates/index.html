@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户列表</title>
+</head>
+<body>
+    <h1>用户列表</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>用户名</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for key,value in data_dict.items() %}
+            <tr>
+                <td>{{key}}</td>
+                <td>{{value.name}}</td>
+                <td>
+                    <a href="/edit?nid={{key}}">编辑</a>
+                    <a href="/del/{{key}}">删除</a>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
