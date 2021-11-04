@@ -1,11 +1,23 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, session
+import functools
 
 app = Flask(__name__)
+app.secret_key = 'asddfghjkl'
 
 DATA_DICT = {
     '1': {'name': 'baby', 'age': 12},
     '2': {'name': 'linda', 'age': 18}
 }
+
+
+def auth(func):
+    @functools.wraps(func)
+    def inner(*args, **kwargs):
+        username = session.get('xxx')
+        if not username:
+            return redirect(url_for('login'))
+        return func(*args, **kwargs)
+    return inner
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -16,12 +28,14 @@ def login():
         user = request.form.get('user')
         passwd = request.form.get('passwd')
         if user == 'fyl' and passwd == 'fyl':
+            session['xxx'] = 'fyl'
             return redirect('/index')
         else:
             return render_template('login.html', error='用户名或密码错误')
 
 
 @app.route('/index', endpoint='idx')
+@auth
 def index():
     data_dict = DATA_DICT
     return render_template('index.html', data_dict=data_dict)
@@ -29,6 +43,7 @@ def index():
 
 # 通过get请求接收参数
 @app.route('/edit', methods=['GET', 'POST'])
+@auth
 def edit():
     nid = request.args.get('nid')
     if request.method == 'GET':
@@ -44,9 +59,9 @@ def edit():
 
 # 通过url后参数接收值，默认字符串，int转换类型
 @app.route('/del/<int:nid>')
+@auth
 def delect(nid):
     del DATA_DICT[str(nid)]
-    # return redirect('/index')
     return redirect(url_for("idx"))
 
 
