@@ -13,7 +13,7 @@ DATA_DICT = {
 def auth(func):
     @functools.wraps(func)
     def inner(*args, **kwargs):
-        username = session.get('xxx')
+        username = session.get('user')
         if not username:
             return redirect(url_for('login'))
         return func(*args, **kwargs)
@@ -28,7 +28,7 @@ def login():
         user = request.form.get('user')
         passwd = request.form.get('passwd')
         if user == 'fyl' and passwd == 'fyl':
-            session['xxx'] = 'fyl'
+            session['user'] = 'fyl'
             return redirect('/index')
         else:
             return render_template('login.html', error='用户名或密码错误')
