@@ -1,6 +1,6 @@
 from flask import Flask
-from project.views.first import FIRST
-from project.views.second import SECOND
+from flask4.project.views.first import FIRST
+from flask4.project.views.second import SECOND
 
 def create_app():
     app = Flask(__name__)
