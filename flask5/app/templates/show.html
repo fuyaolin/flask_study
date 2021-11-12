@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+    <div style="min-height: 48px">
+        <form method="post">
+            <input type="text" name="search">
+            <input type="submit" value="搜索">
+        </form>
+        <button>
+            <a href="/add">新建</a>
+        </button>
+    </div>
+    <table border="1">
+        <thead>
+        {% if data %}
+            <tr>
+                <th>ID</th>
+                <th>用户名</th>
+                <th>年龄</th>
+                <th>操作</th>
+            </tr>
+        {% endif %}
+        </thead>
+        <tbody>
+        {% for i in data %}
+            <tr>
+                <td>{{ i.id }}</td>
+                <td>{{ i.name }}</td>
+                <td>{{ i.age }}</td>
+                <td>
+                    <a href="/edit?nid={{i.id}}">编辑</a>
+                    <a href="/del/{{i.id}}">删除</a>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
