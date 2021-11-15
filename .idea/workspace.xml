@@ -2,18 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e7ba3f0-5417-4a56-a1f0-3b90a40b1064" name="Default Changelist" comment="days04">
-      <change afterPath="$PROJECT_DIR$/flask5/app/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask5/app/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask5/app/templates/add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask5/app/templates/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask5/app/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask5/app/templates/show.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask5/app/view.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask5/app/views/student.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask5/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask6/login.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask6/sqlhelper.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask5/manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask5/manager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask5/project/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask1.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask1-3/flask1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask2.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask1-3/flask2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask3.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask1-3/flask3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask1-3/templates/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask1-3/templates/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask1-3/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask1-3/templates/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -53,13 +51,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../FYL_API_AT" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -68,6 +67,7 @@
       <recent name="D:\LindaProject\flask_study\templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\LindaProject\flask_study\flask1-3" />
       <recent name="D:\LindaProject\flask_study\flask5\app" />
       <recent name="D:\LindaProject\flask_study\flask5\project" />
       <recent name="D:\LindaProject\flask_study\flask5" />
@@ -109,7 +109,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flask1.py" />
+      <option name="SCRIPT_NAME" value="D:\LindaProject\flask_study\flask1-3\flask1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -215,7 +215,10 @@
       <workItem from="1636419628834" duration="7278000" />
       <workItem from="1636436988823" duration="5562000" />
       <workItem from="1636514599621" duration="26569000" />
-      <workItem from="1636678987297" duration="1443000" />
+      <workItem from="1636678987297" duration="2166000" />
+      <workItem from="1636938629473" duration="2523000" />
+      <workItem from="1636958859817" duration="1226000" />
+      <workItem from="1636960938827" duration="2135000" />
     </task>
     <task id="LOCAL-00001" summary="days02">
       <created>1635931431706</created>
