@@ -45,6 +45,13 @@ class PoolDB(object):
         self.close(conn, cursor)
         return result
 
+    def other(self, sql, *args):
+        conn, cursor = self.open()
+        result = cursor.execute(sql, *args)
+        cursor.commit()
+        self.close(conn, cursor)
+        return result
+
     def close(self, conn, cursor):
         conn.close()
         cursor.close()
