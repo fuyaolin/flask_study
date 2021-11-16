@@ -25,7 +25,6 @@ class PoolDB(object):
             blocking=True,
         )
 
-
     def open(self):
         conn = self.POOL.connection()
         cursor = conn.cursor()

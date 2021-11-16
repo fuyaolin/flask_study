@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e7ba3f0-5417-4a56-a1f0-3b90a40b1064" name="Default Changelist" comment="days07">
-      <change afterPath="$PROJECT_DIR$/flask5/app/static/pic.png" afterDir="false" />
+    <list default="true" id="0e7ba3f0-5417-4a56-a1f0-3b90a40b1064" name="Default Changelist" comment="days08">
+      <change afterPath="$PROJECT_DIR$/flask7/config/localsetting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask7/config/setting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask7/login.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask5/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask5/app/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask5/app/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask5/app/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flask6/sqlhelper.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask6/sqlhelper.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +46,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/flask5/app/static" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../FYL_API_AT" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -57,6 +57,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\LindaProject\flask_study\flask7" />
       <recent name="D:\LindaProject\flask_study\flask5\app\static" />
       <recent name="D:\LindaProject\flask_study\flask5" />
       <recent name="D:\LindaProject\flask_study" />
@@ -216,7 +217,7 @@
       <workItem from="1636958859817" duration="1226000" />
       <workItem from="1636960938827" duration="2180000" />
       <workItem from="1637024495007" duration="982000" />
-      <workItem from="1637044807932" duration="540000" />
+      <workItem from="1637044807932" duration="3961000" />
     </task>
     <task id="LOCAL-00001" summary="days02">
       <created>1635931431706</created>
@@ -246,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636963973963</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="days08">
+      <created>1637045362079</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1637045362079</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,7 +276,8 @@
     <MESSAGE value="days02" />
     <MESSAGE value="days04" />
     <MESSAGE value="days07" />
-    <option name="LAST_COMMIT_MESSAGE" value="days07" />
+    <MESSAGE value="days08" />
+    <option name="LAST_COMMIT_MESSAGE" value="days08" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/flask_study$flask1.coverage" NAME="flask1 Coverage Results" MODIFIED="1635836041961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
