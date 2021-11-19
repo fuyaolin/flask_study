@@ -6,7 +6,7 @@ class User(db.Model):
     # 声明表名
     __tablename__ = 'falsk5test'
     # 建立字段函数
-    id = db.Column(db.Integer, primary_key=True, unique=True)
+    id = db.Column(db.Integer, primary_key=True, unique=True, autoincrement=True)
     name = db.Column(db.String(50))
     age = db.Column(db.Integer)
 

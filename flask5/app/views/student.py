@@ -50,7 +50,7 @@ def add():
             return render_template('add.html', error='id,name,age不能为空')
         else:
             # 声明对象
-            user1 = User(id=id, name=name, age=age)
+            user1 = User(name=name, age=age)
             # 调用添加方法
             db.session.add(user1)
             # 提交入库
