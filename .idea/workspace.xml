@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e7ba3f0-5417-4a56-a1f0-3b90a40b1064" name="Default Changelist" comment="days08">
+    <list default="true" id="0e7ba3f0-5417-4a56-a1f0-3b90a40b1064" name="Default Changelist" comment="修改flask5中主键id为自增长模式autoincrement">
+      <change afterPath="$PROJECT_DIR$/flask8/local.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask5/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask5/app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask5/app/templates/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask5/app/templates/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask5/app/views/student.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask5/app/views/student.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +216,10 @@
       <workItem from="1637024495007" duration="982000" />
       <workItem from="1637044807932" duration="3988000" />
       <workItem from="1637112248119" duration="3021000" />
-      <workItem from="1637289693585" duration="902000" />
+      <workItem from="1637289693585" duration="2836000" />
+      <workItem from="1637564221512" duration="602000" />
+      <workItem from="1637637508708" duration="648000" />
+      <workItem from="1637652034318" duration="2462000" />
     </task>
     <task id="LOCAL-00001" summary="days02">
       <created>1635931431706</created>
@@ -262,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637053501587</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="修改flask5中主键id为自增长模式autoincrement">
+      <created>1637301445305</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1637301445305</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,7 +293,8 @@
     <MESSAGE value="days04" />
     <MESSAGE value="days07" />
     <MESSAGE value="days08" />
-    <option name="LAST_COMMIT_MESSAGE" value="days08" />
+    <MESSAGE value="修改flask5中主键id为自增长模式autoincrement" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改flask5中主键id为自增长模式autoincrement" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/flask_study$flask1.coverage" NAME="flask1 Coverage Results" MODIFIED="1635836041961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
