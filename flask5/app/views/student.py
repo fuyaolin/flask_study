@@ -9,14 +9,14 @@ STUDENT = Blueprint('xSTUDENT', __name__)
 @STUDENT.route('/', methods=['GET', 'POST'])
 def login():
     if request.method == 'GET':
-        return render_template('login.html')
+        return render_template('register.html')
     else:
         username = request.form.get('user')
         passwd = request.form.get('passwd')
         if username == 'fyl' and passwd == 'fyl':
             return redirect('/show')
         else:
-            return render_template('login.html', error='用户名或密码错误')
+            return render_template('register.html', error='用户名或密码错误')
 
 
 # 查询

@@ -23,7 +23,7 @@ def auth(func):
 @app.route('/', methods=['GET', 'POST'])
 def login():
     if request.method == 'GET':
-        return render_template('login.html')
+        return render_template('register.html')
     else:
         user = request.form.get('user')
         passwd = request.form.get('passwd')
@@ -31,7 +31,7 @@ def login():
             session['user'] = 'fyl'
             return redirect('/index')
         else:
-            return render_template('login.html', error='用户名或密码错误')
+            return render_template('register.html', error='用户名或密码错误')
 
 
 @app.route('/index', endpoint='idx')

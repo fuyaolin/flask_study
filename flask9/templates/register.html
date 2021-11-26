@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method="post">
+        {{ form.user_name.label }}
+        <p>{{form.user_name}}</p>
+        {% for msg in form.user_name.errors %}
+        <p>{{msg}}</p>
+        {% endfor %}
+
+        {{ form.user_password.label }}
+        <p>{{form.user_password}}</p>
+        {% for msg in form.user_password.errors %}
+        <p>{{msg}}</p>
+        {% endfor %}
+
+        {{ form.same_password.label }}
+        <p>{{form.same_password}}</p>
+        {% for msg in form.same_password.errors %}
+        <p>{{msg}}</p>
+        {% endfor %}
+
+        {{form.submit}}
+    </form>
+</body>
+</html>
