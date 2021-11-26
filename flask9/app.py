@@ -7,13 +7,13 @@ print(keyword.kwlist)
 
 from flask import Flask, render_template
 from flask_wtf import FlaskForm
-from wtforms import StringField,PasswordField,SubmitField
-from wtforms.validators import DataRequired,EqualTo
+from wtforms import StringField, PasswordField, SubmitField
+from wtforms.validators import DataRequired, EqualTo
 
 app = Flask(__name__)
 
 # 配置参数SECRET_KEY
-app.config["SECRET_KEY"] = "ASDHJAVDHJASDVASYJDV"
+app.config["SECRET_KEY"] = "asdf"
 
 
 # 定义表单的模型类
